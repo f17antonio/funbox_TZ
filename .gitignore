@@ -1,0 +1,10 @@
+bin
+_rel
+deps
+ebin
+erl_crash.dump
+log
+.idea
+.eunit
+.rebar
+.git

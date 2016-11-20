@@ -1,0 +1,12 @@
+{application, fbtz,
+ [
+  {description, "FunBox TZ"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+      kernel,
+      stdlib
+  ]},
+  {mod, { fbtz_app, []}},
+  {env, []}
+ ]}.
