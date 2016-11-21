@@ -10,8 +10,6 @@ TAIL        = tail
 REBAR=./rebar
 RELX=./relx
 
-export EUNIT_ERL_OPTS = -args_file etc/vm.args -config etc/sys.config
-
 deps:
 	@$(REBAR) get-deps
 
