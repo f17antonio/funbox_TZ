@@ -27,6 +27,7 @@ init(Parent, MaxNValue, OppsPerSec, QueueKey) ->
     max_n_value = MaxNValue
   },
   proc_lib:init_ack(Parent, {ok, self()}),
+  lager:info("Generator started."),
   generator_loop(State).
 
 generator_loop(State) ->

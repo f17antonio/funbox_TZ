@@ -25,6 +25,7 @@ start_link(Args) ->
   gen_server:start_link(?MODULE, Args, []).
 
 init(OppsPerSec) ->
+  lager:info("fbtz_calc_opps_srv started."),
   {ok, #state{
     opps_per_sec = OppsPerSec,
     opps_per_mcsec = OppsPerSec / ?microseconds,

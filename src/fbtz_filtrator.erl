@@ -25,6 +25,7 @@ init(Parent, OppsPerSec, ResultSetKey, QueueKey) ->
     result_set_key = ResultSetKey
   },
   proc_lib:init_ack(Parent, {ok, self()}),
+  lager:info("Filtrator started."),
   filtrator_loop(State).
 
 filtrator_loop(State) ->
